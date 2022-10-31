@@ -105,9 +105,13 @@ func draw_anew():
 		c.queue_free()
 		
 func player_just_chose_a_card(author, card):
+	if not author.is_inside_tree():
+		return
+		
 	card.set_player(author.get_player())
 	
 	self.players_choices[author] = card
+	
 	author.get_parent().remove_child(author)
 	
 	card.card_content.reset_strikes()

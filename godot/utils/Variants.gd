@@ -16,6 +16,8 @@ func _ready():
 	if debug_variant_index >= 0:
 		index = debug_variant_index
 		
+	index = 0 # TO BE REMOVED
+	
 	var variant = variant_scenes[index].instance()
 	if automirror and randi()%2:
 		# mirror all content horizontally
