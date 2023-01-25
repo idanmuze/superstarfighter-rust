@@ -1,0 +1,17 @@
+[package]
+name = "superstarfighter-rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Idanmuze"]
+publish = false
+rust-version = "1.66"
+license = "MIT"
+
+[dependencies]
+gdnative = { version = "0.11" , features = ["formatted"] }
+
+[lib]
+crate-type = ["cdylib"]
+
+
+

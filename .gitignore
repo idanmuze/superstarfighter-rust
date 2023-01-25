@@ -21,3 +21,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Added by cargo
+
+/target
+/Cargo.lock

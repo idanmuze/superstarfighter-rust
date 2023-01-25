@@ -1,0 +1,17 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+Windows.64="res://../../target/debug/super_star_fighter_rust.dll"
+X11.64="res://../../target/debug/libsuper_star_fighter_rust.so"
+OSX.64="res://../../target/debug/libsuper_star_fighter_rust.dylib"
+
+[dependencies]
+
+X11.64=[  ]
+OSX.64=[  ]
